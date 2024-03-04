@@ -3,13 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .slider{
     width: 80%;
     max-width: 800px;
     margin: auto;
     position: relative;
+    margin-top: 5rem;
     .slides{
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .controls{
         position: absolute;
@@ -27,7 +31,9 @@
     }
 }
 img{
-    max-width: 100%;
+    height: 500px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
 }
 img:not(.active){
     display: none;
